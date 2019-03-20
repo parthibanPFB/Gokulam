@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTypeface">
+        <attr name="typeface" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="light" value="2" />
+            <enum name="medium" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="hint_text" format="string" />
+        <attr name="android:inputType" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FontSpannableTextView">
+        <attr name="partial_text" format="string" />
+        <attr name="partial_text_color" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <customs.CustomTextView
+            android:id="@+id/item_due_si_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Si No"
+            android:textColor="@color/black"
+            app:typeface="bold" />
+
+        <View style="@style/viewHeight" />
+
+        <customs.CustomTextView
+            android:id="@+id/item_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Due Date"
+            android:textColor="@color/black"
+            app:typeface="bold" />
+
+        <View style="@style/viewHeight" />
+
+        <customs.CustomTextView
+            android:id="@+id/item_due_due_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Amount"
+            android:textColor="@color/black"
+            app:typeface="bold" />
+
+        <View style="@style/viewHeight" />
+
+        <customs.CustomTextView
+            android:id="@+id/item_due_payment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Pay Type"
+            android:textColor="@color/black"
+            app:typeface="bold" />
+
+
+    </LinearLayout>
+    <View style="@style/viewWidth" />
+</LinearLayout>

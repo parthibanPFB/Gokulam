@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adp_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/sp_8">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/adp_userimageview"
+        android:layout_width="@dimen/sp_60"
+        android:layout_height="@dimen/sp_60"
+        android:layout_marginStart="8dp"
+        android:src="@mipmap/ic_add_group"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <customs.CustomTextView
+        android:id="@+id/adp_user_name"
+        style="@style/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp_8"
+        android:inputType="textCapSentences"
+        android:paddingStart="@dimen/sp_16"
+        android:text="@string/register"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adp_userimageview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sp_1"
+        android:layout_margin="@dimen/sp_8"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/adp_userimageview" />
+</android.support.constraint.ConstraintLayout>

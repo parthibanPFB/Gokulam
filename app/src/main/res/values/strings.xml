@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Gokulam</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="permission_required">Permission required</string>
+    <string name="settings_message">This app needs permission to access your device. Select "Permission" in App info to re-enable.</string>
+    <string name="app_info">App Info</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_notification_channel_id">0</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="uodate_available">Update Available</string>
+    <string name="update">Update</string>
+    <string name="check_inter_net">No Internet Connection</string>
+    <string name="net_message">Please check your internet connection and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="skip">Skip</string>
+    <string name="cancel">Cancel</string>
+    <string name="registration">Registration</string>
+    <string name="home">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="inr">₹</string>
+
+    <string name="enter_card_number">Aadhar Card Number</string>
+    <string name="ifs_code">IFS Code</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="pan_card_number">PAN Card Number</string>
+    <string name="customer">Customer</string>
+    <string name="mediator">Mediator</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="user_type">User Type</string>
+    <string name="mediator_name">Mediator Name</string>
+    <string name="direct">Direct</string>
+    <string name="lead_source">Lead Source</string>
+    <string name="property_details">Property Details</string>
+    <string name="book_now">Book Now</string>
+    <string name="booked_property">Booked Property</string>
+    <string name="live_chat">Live Chat</string>
+    <string name="due_date">Due Info</string>
+    <string name="due_info_not_found">Due Info Not Found</string>
+    <string name="site_photos">Site Photos</string>
+    <string name="site_videos">Site Videos</string>
+    <string name="collection_agent">Collection Agent</string>
+    <string name="group_name">Group Name</string>
+    <string name="create">Create</string>
+    <string name="creating_group">Creating Group</string>
+    <string name="chats">Chats</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log out</string>
+    <string name="add_new_group">New Group</string>
+    <string name="new_group">New Group</string>
+    <string name="no_user_found">No User Found</string>
+    <string name="select_user">Select User</string>
+    <string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
+    <string name="message_sending">Message Sending</string>
+    <string name="message_failed">Message Failed</string>
+    <string name="resend_message">Resend Message</string>
+    <string name="resends_message">Resend Messages</string>
+    <string name="delete_message">Delete Messages</string>
+    <string name="download">Download</string>
+    <string name="permissionfor_contacts">Permission for Contacts</string>
+    <string name="reason_forpermission">For Start with Chats</string>
+    <string name="reason_forpermission1">Its Shown with Available Users</string>
+    <string name="ok">ok</string>
+    <string name="chat_list_found">No Chat Founds</string>
+    <string name="permissionfor_storage">Permission for Storage</string>
+    <string name="reason_for_storage">Upload chat account Icon</string>
+    <string name="reason_for_storag">Get the Image from Stoage</string>
+
+
+    <string-array name="area_name">
+        <item>Select Area</item>
+        <item>Chennai</item>
+        <item>Kovai</item>
+        <item>Madurai</item>
+        <item>Salem</item>
+        <item>Nellai</item>
+        <item>Erode</item>
+    </string-array>
+</resources>

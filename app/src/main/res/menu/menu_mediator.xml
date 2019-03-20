@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/vector_drawable_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_my_booking"
+            android:icon="@drawable/ic_my_booking"
+            android:title="@string/my_bookings"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_booked_property"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/booked_property"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_live_chat"
+            android:icon="@drawable/ic_chat_1"
+            android:title="@string/live_chat"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/vector_drawable_logout"
+            android:title="Logout"
+            android:visible="true" />
+    </group>
+
+    <item
+        android:title="Details"
+        android:visible="true">
+        <menu>
+
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/vectory_privacy_policy"
+                android:title="Privacy Policy"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_about_us"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/vector_drawable_contact"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

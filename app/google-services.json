@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "225732734142",
+    "firebase_url": "https://gokulam-26986.firebaseio.com",
+    "project_id": "gokulam-26986",
+    "storage_bucket": "gokulam-26986.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225732734142:android:5b5c22cc49935ec4",
+        "android_client_info": {
+          "package_name": "real.estate.gokulam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225732734142-all3e7i4j5rf6koin4kvusetjtmu2vdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "real.estate.gokulam",
+            "certificate_hash": "65e3877081d52b2dcc623f0a53175cd0a3a210bc"
+          }
+        },
+        {
+          "client_id": "225732734142-bgfj028f8cc7ff8cj1p56b5775portmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9ZDqstjxxUWasIbembizFLkwIPgKO6Yk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225732734142-bgfj028f8cc7ff8cj1p56b5775portmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/paren_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <customs.CustomTextView
+            android:id="@+id/upload_group_name"
+            style="@style/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/sp_16"
+            android:text="@string/group_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:id="@+id/imge_relativelayout"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_below="@+id/upload_group_name"
+            android:layout_marginStart="@dimen/sp_16"
+            android:layout_marginTop="@dimen/sp_16"
+            android:layout_marginBottom="@dimen/sp_16"
+            android:background="@drawable/add_user">
+
+            <ImageView
+                android:id="@+id/image_view_profile_dialog"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/sp_8"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="31.5dp"
+                android:layout_height="31.5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/camera" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imge_relativelayout"
+            android:layout_margin="@dimen/sp_8"
+            android:layout_marginStart="-68dp"
+            android:layout_toEndOf="@+id/imge_relativelayout">
+
+            <customs.CustomTextEditView
+                android:id="@+id/edt_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:hint="@string/group_name"
+                android:inputType="textCapSentences"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textin_layout"
+            android:layout_margin="@dimen/sp_8"
+            android:orientation="horizontal">
+
+            <customs.CustomTextView
+                android:id="@+id/btn_cancel"
+                style="@style/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sp_8"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:padding="@dimen/sp_12"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <customs.CustomTextView
+                android:id="@+id/btn_create"
+                style="@style/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sp_8"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle"
+                android:padding="@dimen/sp_12"
+                android:text="@string/create"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

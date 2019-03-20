@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/snack_view_rgs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/snackBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <customs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/user_type"
+                android:textSize="13dp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_empty_bgm"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="8dp">
+
+                <customs.CustomRadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/customer" />
+
+                <customs.CustomRadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mediator" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/customer_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lead_source"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="8dp">
+
+                    <customs.CustomRadioButton
+                        android:id="@+id/rb_direct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/direct" />
+
+                    <customs.CustomRadioButton
+                        android:id="@+id/rb_mediator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mediator" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:id="@+id/mediator_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/purpose_of_visit_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mediator_name"
+                        android:textSize="12dp">
+
+                        <customs.CustomEditText
+                            android:id="@+id/area_name_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_empty_bgm"
+                            android:editable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/mediator_name"
+                            android:imeOptions="actionNext"
+                            android:longClickable="false"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:text=" " />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/mediator_name_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/purpose_of_visit_til"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:entries="@array/area_name"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/name"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="Subbu"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/email_id"
+                    android:inputType="textWebEmailAddress"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="subramani@kambaa.com"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="9788686374"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:gravity="top"
+                    android:hint="@string/address"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:singleLine="false"
+                    android:text="PSG Step Park 2"
+                    android:textColor="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center"
+                app:passwordToggleEnabled="false">
+
+                <customs.CustomEditText
+                    android:id="@+id/password_rgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:text="1236"
+                    android:textColor="@color/black"
+                    app:typeface="regular" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center"
+                app:passwordToggleEnabled="false">
+
+                <customs.CustomEditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:text="1236"
+                    android:textColor="@color/black"
+                    app:typeface="regular" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/aadhar_card_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/enter_card_number"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="1230456987012"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/pan_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/pan_card_number"
+                    android:inputType="textCapSentences"
+                    android:maxLength="10"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="SPK254SD254"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/bank_name"
+                    android:inputType="textCapSentences"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="RBL"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/account_number"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="1332101025874"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/branch_name"
+                    android:inputType="textCapSentences"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/gap_between_two_events_in_registration"
+                android:gravity="center">
+
+                <customs.CustomEditText
+                    android:id="@+id/ifsc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_empty_bgm"
+                    android:hint="@string/ifs_code"
+                    android:inputType="textCapSentences"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="CNRB0001332"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <customs.CustomButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/draw_ripple_effect"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        app:typeface="bold" />
+</RelativeLayout>

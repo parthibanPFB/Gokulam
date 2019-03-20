@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snac_view_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.propertyInfo.ViewRegisterAndDueDates">
+
+    <!-- TODO: Update blank fragment layout -->
+    <customs.CustomTextView
+        android:id="@+id/due_info_no_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/due_info_not_found"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:typeface="bold" />
+
+    <LinearLayout
+        android:id="@+id/payment_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_pay"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <customs.CustomTextView
+                android:id="@+id/register_no_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                app:typeface="bold" />
+
+            <customs.CustomTextView
+                android:id="@+id/register_date_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                app:typeface="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/load_details" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <customs.CustomTextView
+            android:id="@+id/due_date_crossed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Over Due Date"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:typeface="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <customs.CustomButton
+                android:id="@+id/cancel_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel Due" />
+
+            <customs.CustomButton
+                android:id="@+id/done_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pay Due" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

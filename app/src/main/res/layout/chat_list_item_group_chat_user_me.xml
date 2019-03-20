@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingRight="8dp">
+
+    <View
+        android:id="@+id/view_group_chat_padding"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentTop="true" />
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/view_group_chat_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/group_chat_date_background"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:text="February 22"
+        android:textColor="@color/groupChatDateText"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_group_chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_group_chat_date"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/lightgreen"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/group_chat_message_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <customs.CustomTextView
+                android:id="@+id/text_group_chat_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="260dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingRight="12dp"
+                android:text="Hi, how are you today?"
+                android:textColor="@color/groupChatTextMe"
+                android:textSize="16sp" />
+
+            <customs.CustomTextView
+                android:id="@+id/text_group_chat_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="(edited)"
+                android:textColor="#d8ceff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:id="@+id/url_preview_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:maxWidth="260dp" />
+
+                <customs.CustomTextView
+                    android:id="@+id/text_url_preview_site_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="260dp"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="\@Reddit"
+                    android:textColor="@color/groupChatTextMe"
+                    android:textSize="12sp" />
+
+                <customs.CustomTextView
+                    android:id="@+id/text_url_preview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="260dp"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Title will be here."
+                    android:textColor="@color/groupChatTextMe"
+                    android:textSize="16sp" />
+
+                <customs.CustomTextView
+                    android:id="@+id/text_url_preview_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="260dp"
+                    android:maxLines="3"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="4dp"
+                    android:text="Description will be here. Blah Blah WWW Blah Wl Blah W WW WW ABCD EFG WW WW WW W Third Line. WWW Z XCVB QWER"
+                    android:textColor="@color/groupChatTextMe"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/image_url_preview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="260dp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/card_group_chat_message"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/card_group_chat_message"
+        android:text="21:27"
+        android:textColor="#8e8e8e"
+        android:textSize="10dp" />
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_read_receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignRight="@id/text_group_chat_time"
+        android:text=""
+        android:visibility="visible"
+        android:textColor="@color/groupChatReadReceiptMe"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

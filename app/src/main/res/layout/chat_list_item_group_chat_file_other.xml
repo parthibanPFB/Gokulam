@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/group_chat_date_background"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:text="February 22"
+        android:textColor="@color/groupChatDateText"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/image_group_chat_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/text_group_chat_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/profile_placeholder" />
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_group_chat_profile"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/image_group_chat_profile"
+        android:text="Daniel Silberschatz"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_group_chat_file_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_group_chat_nickname"
+        android:layout_toRightOf="@id/image_group_chat_profile"
+        android:background="@drawable/group_chat_file_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_file_message" />
+
+        <customs.CustomTextView
+            android:id="@+id/text_group_chat_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="File Name.xls" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="#d8d8d8" />
+
+        <customs.CustomButton
+            android:id="@+id/button_group_chat_file_download"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/ic_file_message_download" />
+
+    </LinearLayout>
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/layout_group_chat_file_message"
+        android:layout_toRightOf="@id/layout_group_chat_file_message"
+        android:text="21:27"
+        android:textColor="#8e8e8e"
+        android:textSize="10dp" />
+
+    <customs.CustomTextView
+        android:id="@+id/text_group_chat_read_receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_group_chat_time"
+        android:layout_alignLeft="@id/text_group_chat_time"
+        android:text=""
+        android:visibility="visible"
+        android:textColor="@color/groupChatReadReceiptOther"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+</RelativeLayout>

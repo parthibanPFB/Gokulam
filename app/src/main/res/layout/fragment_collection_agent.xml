@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mSanckView_collection_agen"
+    tools:context=".views.colletionAgent.CollectionAgent">
+
+
+    <TextView
+        style="@style/customTitleCenter"
+        android:id="@+id/no_colletion_list"
+        android:text="@string/collection_agent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/collection_customer_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_chat_list" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_parent_video"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_thumb"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_person" />
+
+    <customs.CustomTextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="@string/site_videos"
+        android:textColor="@color/black" />
+
+</LinearLayout>

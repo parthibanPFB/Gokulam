@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4789</color>
+    <color name="colorPrimaryDark">#CA1657</color>
+    <color name="colorAccent">#2A8851</color>
+    <color name="black_transparent_50_op">#44000000</color>
+
+    <color name="appColorBgm">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="hint_color">#67000000</color>
+    <color name="view_line">#cfd0d2</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="red">#FF0000</color>
+
+    <color name="land_gradiant">#B2F33E7B</color>
+
+    <color name="btn_edit_disabled">#c1acff</color>
+
+
+    <color name="btn_create">#ffffff</color>
+    <color name="btn_create_disabled">#c1acff</color>
+    <color name="btn_edit">#ffffff</color>
+
+    <color name="btn_send">#774df2</color>
+    <color name="btn_send_disabled">#8e8e8e</color>
+
+
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#7d62df</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+    <color name="textColorPrimary">#3a414d</color>
+    <color name="textColorLight">#6f7c92</color>
+
+    <!-- Login -->
+    <color name="colorButton">#774df2</color>
+
+    <!-- Open Chat -->
+    <color name="openChatText">#47505d</color>
+    <color name="openChatNicknameOther">#3a414d</color>
+    <color name="openChatNicknameMe">#00BCD4</color>
+
+
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+
+    <color name="groupChatAdminText">#39474e</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+
+    <color name="groupChatAdminBackground">#70e0fcff</color>
+
+    <color name="lightgreen">#10a068</color>
+    <color name="lightsandalgrey">#e3e6a8</color>
+
+    <color name="groupChatDateBackground">#C0C0C0</color>
+
+    <color name="dialog_trans">#00ffffff</color>
+
+</resources>

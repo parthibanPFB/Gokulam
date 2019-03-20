@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/snack_view_booked"
+    tools:context=".views.propertyInfo.bookedProperty.ListOfBookedProperty">
+
+    <customs.CustomTextView
+        android:id="@+id/no_booked_info"
+        style="@style/customTitleCenter"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/black"
+        app:typeface="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/booked_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

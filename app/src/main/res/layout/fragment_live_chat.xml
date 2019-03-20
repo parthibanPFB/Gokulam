@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.liveChat.LiveChat">
+
+    <customs.CustomTextView
+        style="@style/customTitleCenter"
+        android:text="Chat Coming Soon"
+        android:id="@+id/no_chat_list"
+        android:textColor="@color/black"
+        app:typeface="bold" />
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/chat_list"
+    android:layout_height="match_parent"/>
+</FrameLayout>

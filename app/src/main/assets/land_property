@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>view1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (view1.png) -->
+<table id="Table_01" width="600" height="363" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="10">
+            <a href="#" target="_blank" id="1_01" class="test">
+                <img src="file:///android_res/drawable/view1_01.jpg" width="600" height="101"
+                     alt="">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <a href="#" target="_blank" id="1_02" class="test">
+                <img src="file:///android_res/drawable/view1_02.jpg" width="98" height="262" alt="">
+            </a>
+        </td>
+        <td>
+            <a href="#" target="_blank" id="46" class="test">
+                <img src="file:///android_res/drawable/view_img_46.jpg" width="39" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="47" class="test">
+                <img src="file:///android_res/drawable/view_img_47.jpg" width="20" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="48" class="test">
+                <img src="file:///android_res/drawable/view_img_48.jpg" width="20" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="1_06" class="test">
+                <img src="file:///android_res/drawable/view1_06.jpg" width="19" height="25" alt="">
+            </a>
+        </td>
+        <td>
+            <a href="#" target="_blank" id="49" class="test">
+                <img src="file:///android_res/drawable/view_img_49.jpg" width="20" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="51" class="test">
+                <img src="file:///android_res/drawable/view_img_51.jpg" width="20" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="52" class="test">
+                <img src="file:///android_res/drawable/view_img_52.jpg" width="18" height="25"
+                     alt="">
+            </a></td>
+        <td>
+            <a href="#" target="_blank" id="53" class="test">
+                <img src="file:///android_res/drawable/view_img_53.jpg" width="20" height="25"
+                     alt="">
+            </a></td>
+        <td rowspan="2">
+            <a href="#" target="_blank" id="1_11" class="test">
+                <img src="file:///android_res/drawable/view1_11.jpg" width="326" height="262"
+                     alt="">
+            </a></td>
+    </tr>
+    <tr>
+        <td colspan="8">
+            <a href="#" target="_blank" id="1_12" class="test">
+                <img src="file:///android_res/drawable/view1_12.jpg" width="176" height="237"
+                     alt="">
+            </a></td>
+        </td>
+    </tr>
+</table>
+<!-- End Save for Web Slices -->
+
+</body>
+<script>
+$( ".test" ).click(function(e) {
+ e.preventDefault();
+ Android.showToast(this.id);
+});
+
+</script>
+
+</html>
